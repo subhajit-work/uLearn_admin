@@ -1,0 +1,327 @@
+<!-- common header show -->
+<common-header></common-header>
+
+<ion-content>
+  <div class="page-body">
+    <div class="page-wrapper">
+      <div class="table-listing">
+        <div class="card-outer">
+          <div class="card card-box">
+              <div class="card-header">
+                  <div class="card-header-tittle">
+                      User List
+                  </div>
+                  <div class="card-header-action">
+                    <button class="border-btn success" mat-stroked-button>
+                      <mat-icon>add_circle_outline</mat-icon>
+                      Add user
+                    </button>
+                  </div>
+              </div>
+              <div class="card-body">
+                <div class="table-header">
+                  <div class="records-wrapper">
+                    <ion-item class="record">
+                      <span>Records: </span>
+                      <mat-form-field>
+                        <mat-select value="10">
+                          <mat-option value="10">10</mat-option>
+                          <mat-option value="25">25</mat-option>
+                          <mat-option value="50">50</mat-option>
+                          <mat-option value="100">100</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </ion-item>
+                  </div>
+                  <div class="search-wrapper">
+                    <ion-searchbar showCancelButton="focus" debounce="500" placeholder="Search item ...."></ion-searchbar>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="ion-text-start">
+                                    <div>
+                                        #
+                                    </div>
+                                </th>
+                                <th class="ion-text-start">
+                                    <div>
+                                        <ion-checkbox color="primary"></ion-checkbox>
+                                    </div>
+                                  </th>
+                                <th class="ion-text-start">
+                                    <div>
+                                        Name
+                                        <mat-icon>import_export</mat-icon>
+                                    </div>
+                                </th>
+                                <th class="ion-text-center">
+                                    <div class="ion-justify-content-center">
+                                        Status
+                                        <mat-icon>north</mat-icon>
+                                    </div>
+                                </th>
+                                <th class="ion-text-center">
+                                    <div class="ion-justify-content-center">
+                                        Progress
+                                        <mat-icon>south</mat-icon>
+                                    </div>
+                                </th>
+                                <th class="ion-text-center">
+                                    <div class="ion-justify-content-center">
+                                        Actions
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <ion-checkbox color="primary"></ion-checkbox>
+                                </td>
+                                <td>
+                                    <ion-item class="name-box">
+                                        <ion-avatar slot="start">
+                                          <img src="assets/images/avatar1.jpg">
+                                        </ion-avatar>
+                                        <ion-label>
+                                          <h2 class="userName">Shanelle Wynn</h2>
+                                          <h3 class="userRole">UI Engineer, Apple Inc.</h3>
+                                        </ion-label>
+                                    </ion-item>
+                                </td>
+                                <td>
+                                    <div class="status warning">
+                                        Pending
+                                    </div>
+                                </td>
+                                <td>
+                                    <progress-bar [progress]="55" [color]="'#32C5DB'">
+                                    </progress-bar>
+                                </td>
+                                <td>
+                                    <div class="action ion-text-center">
+                                        <ion-button size="small" color="secondary">
+                                            <mat-icon>edit</mat-icon>
+                                        </ion-button>
+                                        <ion-button size="small" color="success">
+                                            <mat-icon>visibility</mat-icon>
+                                        </ion-button>
+                                        <ion-button size="small" color="danger">
+                                            <mat-icon>delete</mat-icon>
+                                        </ion-button>
+                                        <ion-button size="small" color="tertiary">
+                                            <mat-icon>picture_as_pdf</mat-icon>
+                                        </ion-button>
+                                        <ion-button size="small" color="warning">
+                                            <mat-icon>description</mat-icon>
+                                        </ion-button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <ion-checkbox color="primary"></ion-checkbox>
+                                </td>
+                                <td>
+                                    <ion-item class="name-box">
+                                        <ion-avatar slot="start">
+                                          <img src="assets/images/avatar2.jpg">
+                                        </ion-avatar>
+                                        <ion-label>
+                                          <h2 class="userName">Shanelle Wynn</h2>
+                                          <h3 class="userRole">UI Engineer, Apple Inc.</h3>
+                                        </ion-label>
+                                    </ion-item>
+                                </td>
+                                <td>
+                                    <div class="status warning">
+                                        Pending
+                                    </div>
+                                </td>
+                                <td>
+                                    <progress-bar [progress]="85" [color]="'#59CA44'">
+                                    </progress-bar>
+                                </td>
+                                <td>
+                                    <div class="action ion-text-center">
+                                        <ion-button size="small" color="secondary">
+                                            <mat-icon>edit</mat-icon>
+                                        </ion-button>
+                                        <ion-button size="small" color="success">
+                                            <mat-icon>visibility</mat-icon>
+                                        </ion-button>
+                                        <ion-button size="small" color="danger">
+                                            <mat-icon>delete</mat-icon>
+                                        </ion-button>
+                                        <ion-button size="small" color="tertiary">
+                                            <mat-icon>picture_as_pdf</mat-icon>
+                                        </ion-button>
+                                        <ion-button size="small" color="warning">
+                                            <mat-icon>description</mat-icon>
+                                        </ion-button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <ion-checkbox color="primary"></ion-checkbox>
+                                </td>
+                                <td>
+                                    <ion-item class="name-box">
+                                        <ion-avatar slot="start">
+                                          <img src="assets/images/avatar3.jpg">
+                                        </ion-avatar>
+                                        <ion-label>
+                                          <h2 class="userName">Regan Norris</h2>
+                                          <h3 class="userRole">Senior Project Manager</h3>
+                                        </ion-label>
+                                    </ion-item>
+                                </td>
+                                <td>
+                                    <div class="status danger">
+                                        failed
+                                    </div>
+                                </td>
+                                <td>
+                                    <progress-bar [progress]="55" [color]="'#f83245'">
+                                    </progress-bar>
+                                </td>
+                                <td>
+                                    <div class="action ion-text-center">
+                                        <ion-button size="small" color="secondary">
+                                            <mat-icon>edit</mat-icon>
+                                        </ion-button>
+                                        <ion-button size="small" color="success">
+                                            <mat-icon>visibility</mat-icon>
+                                        </ion-button>
+                                        <ion-button size="small" color="danger">
+                                            <mat-icon>delete</mat-icon>
+                                        </ion-button>
+                                        <ion-button size="small" color="tertiary">
+                                            <mat-icon>picture_as_pdf</mat-icon>
+                                        </ion-button>
+                                        <ion-button size="small" color="warning">
+                                            <mat-icon>description</mat-icon>
+                                        </ion-button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <ion-checkbox color="primary"></ion-checkbox>
+                                </td>
+                                <td>
+                                    <ion-item class="name-box">
+                                        <ion-avatar slot="start">
+                                          <img src="assets/images/people-1.jpg">
+                                        </ion-avatar>
+                                        <ion-label>
+                                          <h2 class="userName">Beck Simpson</h2>
+                                          <h3 class="userRole">Frontend Developer</h3>
+                                        </ion-label>
+                                    </ion-item>
+                                </td>
+                                <td>
+                                    <div class="status success">
+                                        Complete
+                                    </div>
+                                </td>
+                                <td>
+                                    <progress-bar [progress]="39" [color]="'#7A7B97'">
+                                    </progress-bar>
+                                </td>
+                                <td>
+                                    <div class="action ion-text-center">
+                                        <ion-button size="small" color="secondary">
+                                            <mat-icon>edit</mat-icon>
+                                        </ion-button>
+                                        <ion-button size="small" color="success">
+                                            <mat-icon>visibility</mat-icon>
+                                        </ion-button>
+                                        <ion-button size="small" color="danger">
+                                            <mat-icon>delete</mat-icon>
+                                        </ion-button>
+                                        <ion-button size="small" color="tertiary">
+                                            <mat-icon>picture_as_pdf</mat-icon>
+                                        </ion-button>
+                                        <ion-button size="small" color="warning">
+                                            <mat-icon>description</mat-icon>
+                                        </ion-button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+              </div>
+              <div class="card-footer">
+                  <div class="action">
+                    <ion-button size="small" color="secondary">
+                        <mat-icon>refresh</mat-icon>
+                    </ion-button>
+                    <ion-button size="small" color="success">
+                        <mat-icon>visibility</mat-icon>
+                    </ion-button>
+                    <ion-button size="small" color="medium">
+                        <mat-icon>visibility_off</mat-icon>
+                    </ion-button>
+                    <ion-button size="small" color="danger">
+                        <mat-icon>delete</mat-icon>
+                    </ion-button>
+                    <ion-button size="small" color="tertiary">
+                        <mat-icon>picture_as_pdf</mat-icon>
+                    </ion-button>
+                    <ion-button size="small" color="warning">
+                        <mat-icon>description</mat-icon>
+                    </ion-button>
+                  </div>
+                  <div>
+                    <ul class="pagination">
+                        <li class="circle-border">
+                            <a>
+                              <!-- First -->
+                              <ion-icon name="play-skip-back"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="circle-border">
+                            <a>
+                              <!-- Previous -->
+                              <ion-icon name="caret-back"></ion-icon>
+                            </a>
+                        </li>
+                        <li> <span class="ran-separator pull-right margin-top-3"></span> </li>
+                        <li>
+                            Page <a>1</a> of 10
+                        </li>
+                        <li> <span class="ran-separator pull-right margin-top-3"></span> </li>
+                        <li class="circle-border">
+                            <a>
+                              <!-- Next -->
+                              <ion-icon name="caret-forward"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="circle-border">
+                            <a>
+                              <!-- Last -->
+                              <ion-icon name="play-skip-forward"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<!-- common footer show -->
+<common-footer></common-footer>
